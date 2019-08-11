@@ -2,6 +2,7 @@ import java.util.LinkedList;
 
 public class Graph_Representation_AdjacencyList{
 
+    // Initiating graph constructor
     static class Graph{
         int V;
         LinkedList<Integer> adjArrayList[];
