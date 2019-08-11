@@ -28,8 +28,9 @@ public class Graph_Representation_AdjacencyList{
         graph.adjArrayList[destination].add(source);
     }
 
-    static void traverseGraph(Graph graph){
 
+    //Travesing the graph
+    static void traverseGraph(Graph graph){
         for(int i=0;i<graph.V;i++){
             System.out.println("AdjacencyList for vertx v "+i);
             System.out.print("Head");
@@ -40,6 +41,7 @@ public class Graph_Representation_AdjacencyList{
         }
     }
 
+    // Main function
     public static void main(String args[]){
         int V = 5;
         Graph graph = new Graph(V);
@@ -48,10 +50,6 @@ public class Graph_Representation_AdjacencyList{
         addEdge(graph, 2, 4);
         addEdge(graph, 2, 3);
         addEdge(graph, 4, 1);
-
-        traverseGraph(graph);
-
-
-        
+        traverseGraph(graph);   
     }
 }
